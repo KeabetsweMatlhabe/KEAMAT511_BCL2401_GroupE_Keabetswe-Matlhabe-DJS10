@@ -13,6 +13,7 @@ function App() {
       .then((posts) => setData(posts))
       .catch((error) => {
         setError(error);
+        setErrorImage("https://your-error-image-url.com/error.png")
       });
   }, []);
   // setError("Now there's an error")
